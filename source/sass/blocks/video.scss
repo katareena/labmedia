@@ -1,0 +1,130 @@
+// .video {}
+
+.video__title {
+  @include title;
+  @include mobile-padding;
+  padding-top: 20px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-padding;
+    padding-top: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+.video__inner {
+  @media (min-width: $tablet-width) {
+    @include tablet-padding;
+    display: flex;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin-left: 0;
+  }
+
+}
+
+.video__pic {
+  width: 100%;
+  height: 170px;
+  background-color: $black;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    height: 173px;
+    flex: 0 0 325px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 248px;
+    flex: 0 0 465px;
+  }
+}
+
+.video__pic img {
+  @media (min-width: $tablet-width) {
+    width: 325px;
+    height: inherit;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 465px;
+  }
+}
+
+.video__box {
+  @include mobile-padding;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    flex: 0 0 50%;
+  }
+}
+
+.video__item {
+  max-width: 550px;
+  margin: 0 auto;
+  padding-top: 80px;
+  position: relative;
+  margin-bottom: 30px;
+  -webkit-margin-after: 31px;   // chrome
+
+
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: calc(50% - 30px);
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-left: 136px;
+    margin-bottom: 42px;
+    -webkit-margin-after: 44px;
+
+    &::before {
+      top: calc(50% - 30px + 2px);
+      left: 36px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    -webkit-margin-after: 42px;
+  }
+}
+
+.video__item--video::before {
+  background-image: url("../img/pic-video.svg");
+}
+
+.video__item--foto::before {
+  background-image: url("../img/pic-foto.svg");
+}
+
+.video__item--slow::before {
+  background-image: url("../img/pic-slow.svg");
+}
+
+.video__text {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+}
