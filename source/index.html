@@ -115,41 +115,90 @@
       </section>
     </div>
 
+    <section class="video">
+      <h2 class="video__title">Съемка видео</h2>
+      <div class="video__inner">
+        <div class="video__pic">
+          <picture>
+            <!-- 1х: 465px; 2x: 930px -->
+            <source type="image/webp" media="(min-width: 1000px)"
+              srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x" />
+            <!-- 1х: 325px; 2x: 650px -->
+            <source type="image/webp" media="(min-width: 720px)"
+              srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x" />
+            <!-- 1х: 320px; 2x: 640px -->
+            <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x" />
 
-      <section class="video">
-        <h2 class="video__title">Съемка видео</h2>
-        <div class="video__inner">
-          <div class="video__pic">
-            <picture>
-              <!-- 1х: 465px; 2x: 930px -->
-              <source type="image/webp" media="(min-width: 1000px)"
-                srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x" />
-              <!-- 1х: 325px; 2x: 650px -->
-              <source type="image/webp" media="(min-width: 720px)"
-                srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x" />
-              <!-- 1х: 320px; 2x: 640px -->
-              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x" />
-
-              <img src="img/video-mobile@1x.png" srcset="img/video-mobile@2x.png 2x" alt="Телефон"
-                width="320" height="170" />
-            </picture>
+            <img src="img/video-mobile@1x.png" srcset="img/video-mobile@2x.png 2x" alt="Телефон"
+              width="320" height="170" />
+          </picture>
+        </div>
+        <div class="video__box">
+          <div class="video__item video__item--video">
+            <p class="video__text">Отличное качество съемки новых поколениесмартфонов Samsung позволит создать и смотреть праздники, семейные торжества и памятные моменты на огромном экране, с яркими, живыми цветами и прекрасной детализацией.</p>
           </div>
-          <div class="video__box">
-            <div class="video__item video__item--video">
-              <p class="video__text">Отличное качество съемки новых поколениесмартфонов Samsung позволит создать и смотреть праздники, семейные торжества и памятные моменты на огромном экране, с яркими, живыми цветами и прекрасной детализацией.</p>
+          <div class="video__item video__item--foto">
+            <p class="video__text">Дополнительная система стабилизации сделает видеоролики плавными и красивыми.</p>
+          </div>
+          <div class="video__item video__item--slow">
+            <p class="video__text">Сверхзамедленная съемка (960 кадров в секунду) теперь в 2 раза дольше. Камера в S10 способна распознать самое стремительное движение, такое как языки пламени, брызги воды, дым из под колес спорткара.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="main__inner">
+      <section class="accessories">
+        <h2 class="accessories__title">Аксессуары</h2>
+        <div class="accessories__wrap">
+          <div class="accessories__inner">
+            <div class="accessories__block">
+              <div class="accessories__img">
+                <picture>
+                  <!-- 1х: 222px; 2x: 444px -->
+                  <source type="image/webp" media="(min-width: 1000px)"
+                    srcset="img/accessories-1-desktop@1x.webp 1x, img/accessories-1-desktop@2x.webp 2x" />
+                  <!-- 1х: 325px; 2x: 650px -->
+                  <source type="image/webp" media="(min-width: 720px)"
+                    srcset="img/accessories-1-tablet@1x.webp 1x, img/accessories-1-tablet@2x.webp 2x" />
+                  <!-- 1х: 290px; 2x: 580px -->
+                  <source type="image/webp" srcset="img/accessories-1-mobile@1x.webp 1x, img/accessories-1-mobile@2x.webp 2x" />
+
+                  <img src="img/accessories-1-mobile@1x.png" srcset="img/accessories-1-mobile@2x 2x" alt="Aксессуары"
+                    width="290" height="150" />
+                </picture>
+              </div>
+              <p class="accessories__describe">Обширный ассортимент чехлов лля каждой модели. Цветовая гамма, отличное качество, премиальные материалы и дополнительные возможности призваны удовлетворить даже самый притязательный вкус.</p>
             </div>
-            <div class="video__item video__item--foto">
-              <p class="video__text">Дополнительная система стабилизации сделает видеоролики плавными и красивыми.</p>
+
+            <div class="accessories__block">
+              <div class="accessories__img">
+                <picture>
+                  <!-- 1х: 222px; 2x: 444px -->
+                  <source type="image/webp" media="(min-width: 1000px)"
+                    srcset="img/accessories-2-desktop@1x.webp 1x, img/accessories-2-desktop@2x.webp 2x" />
+                  <!-- 1х: 325px; 2x: 650px -->
+                  <source type="image/webp" media="(min-width: 720px)"
+                    srcset="img/accessories-2-tablet@1x.webp 1x, img/accessories-2-tablet@2x.webp 2x" />
+                  <!-- 1х: 290px; 2x: 580px -->
+                  <source type="image/webp" srcset="img/accessories-2-mobile@1x.webp 1x, img/accessories-2-mobile@2x.webp 2x" />
+
+                  <img src="img/accessories-2-mobile@1x.png" srcset="img/accessories-2-mobile@2x 2x" alt="Aксессуары"
+                    width="290" height="150" />
+                </picture>
+              </div>
+              <p class="accessories__describe">Беспроводная зарядная станция Duo Pad быстро заряжает одновременно два устройства, одно из которых охлаждается.</p>
             </div>
-            <div class="video__item video__item--slow">
-              <p class="video__text">Сверхзамедленная съемка (960 кадров в секунду) теперь в 2 раза дольше. Камера в S10 способна распознать самое стремительное движение, такое как языки пламени, брызги воды, дым из под колес спорткара.</p>
-            </div>
+          </div>
+          <div class="accessories__box">
+            <p class="accessories__text">Galaxy S10+ в режиме Dex поддерживает широкоформатные мониторы. Мощный смартфон превращается в мощный десктоп.</p>
+            <p class="accessories__text">Смартфон S10 сразу укомплектован защитной пленкой.</p>
           </div>
         </div>
       </section>
 
 
-    <div class="main__inner">
+
     </div>
 
   </main>

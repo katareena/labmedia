@@ -1,5 +1,3 @@
-// .video {}
-
 .video__title {
   @include title;
   @include mobile-padding;
@@ -21,10 +19,9 @@
 
 
   @media (min-width: $desktop-width) {
-    max-width: 1200px;
+    // max-width: 1200px;
     margin-left: 0;
   }
-
 }
 
 .video__pic {
@@ -64,6 +61,12 @@
     padding: 0;
     flex: 0 0 50%;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 900px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .video__item {
@@ -73,8 +76,6 @@
   position: relative;
   margin-bottom: 30px;
   -webkit-margin-after: 31px;   // chrome
-
-
 
   &::before {
     position: absolute;
@@ -100,7 +101,16 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 141px;
+    max-width: 900px;
+    margin-left: 0;
+    margin-right: 0;
     -webkit-margin-after: 42px;
+
+    &::before {
+      top: calc(50% - 30px + 2px);
+      left: 41px;
+    }
   }
 }
 
