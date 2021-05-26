@@ -1,0 +1,14 @@
+.main__inner {
+  @include mobile-padding;
+  flex: 1 0 auto;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-padding;
+  }
+}
+
+.main__wrap--authorization {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}

@@ -1,0 +1,26 @@
+.user-nav {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.user-nav__item {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.user-nav__link {
+  font-size: 14px;
+  line-height: calc(21 / 14);
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: calc(23 / 18);
+  }
+}
