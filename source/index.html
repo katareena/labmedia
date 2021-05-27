@@ -85,6 +85,8 @@
                 <!-- 1х: 230px; 2x: 460px -->
                 <source type="image/webp" srcset="img/banner-1-mobile@1x.webp 1x, img/banner-1-mobile@2x.webp 2x" />
 
+                <source media="(min-width: 1000px)" srcset="img/banner-1-desktop@1x.png 1x, img/banner-1-desktop@1x.png 2x"/>
+                <source media="(min-width: 720px)" srcset="img/banner-1-tablet@1x.png 1x, img/banner-1-tablet@1x.png 2x"/>
                 <img src="img/banner-1-mobile@1x.png" srcset="img/banner-1-mobile@2x.png 2x" alt="Телефон"
                   width="230" height="158" />
               </picture>
@@ -129,7 +131,9 @@
             <!-- 1х: 320px; 2x: 640px -->
             <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x" />
 
-            <img src="img/video-mobile@1x.png" srcset="img/video-mobile@2x.png 2x" alt="Телефон"
+            <source media="(min-width: 1000px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@1x.jpg 2x"/>
+            <source media="(min-width: 720px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@1x.jpg 2x"/>
+            <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Телефон"
               width="320" height="170" />
           </picture>
         </div>
@@ -164,7 +168,9 @@
                   <!-- 1х: 290px; 2x: 580px -->
                   <source type="image/webp" srcset="img/accessories-1-mobile@1x.webp 1x, img/accessories-1-mobile@2x.webp 2x" />
 
-                  <img src="img/accessories-1-mobile@1x.png" srcset="img/accessories-1-mobile@2x 2x" alt="Aксессуары"
+                  <source media="(min-width: 1000px)" srcset="img/accessories-1-desktop@1x.png 1x, img/accessories-1-desktop@1x.png 2x"/>
+                  <source media="(min-width: 720px)" srcset="img/accessories-1-tablet@1x.png 1x, img/accessories-1-tablet@1x.png 2x"/>
+                  <img src="img/accessories-1-mobile@1x.png" srcset="img/accessories-1-mobile@2x.png 2x" alt="Aксессуары"
                     width="290" height="150" />
                 </picture>
               </div>
@@ -183,7 +189,9 @@
                   <!-- 1х: 290px; 2x: 580px -->
                   <source type="image/webp" srcset="img/accessories-2-mobile@1x.webp 1x, img/accessories-2-mobile@2x.webp 2x" />
 
-                  <img src="img/accessories-2-mobile@1x.png" srcset="img/accessories-2-mobile@2x 2x" alt="Aксессуары"
+                  <source media="(min-width: 1000px)" srcset="img/accessories-2-desktop@1x.png 1x, img/accessories-2-desktop@1x.png 2x"/>
+                  <source media="(min-width: 720px)" srcset="img/accessories-2-tablet@1x.png 1x, img/accessories-2-tablet@1x.png 2x"/>
+                  <img src="img/accessories-2-mobile@1x.png" srcset="img/accessories-2-mobile@2x.png 2x" alt="Aксессуары"
                     width="290" height="150" />
                 </picture>
               </div>
@@ -197,10 +205,30 @@
         </div>
       </section>
 
-
-
+      <section class="app">
+        <h2 class="app__title">Приложения и сервисы Samsung</h2>
+        <div class="app__inner">
+          <div class="app__item app__item--left app__item--smart">
+            <p class="app__text">Благодаря приложению Smart Switch можно перенести информацию со старого смартфона на новый.</p>
+          </div>
+          <div class="app__item app__item--right app__item--health">
+            <p class="app__text">Приложение Samsung Health помогает контролировать физическую активность и вести дневник питания.
+            </p>
+          </div>
+          <div class="app__item app__item--left app__item--bixby">
+            <p class="app__text">Интеллектуальный помощник Bixby обеспечит быстрый доступ к переводчику, поиску в Интернете, покупкам и многому другому.
+            </p>
+          </div>
+          <div class="app__item app__item--right app__item--pay">
+            <p class="app__text">Приложение Samsung Pay дает возможность оплачивать свои покупки при помощи смартфона.
+            </p>
+          </div>
+          <div class="app__item app__item--left app__item--things">
+            <p class="app__text">Благодаря приложению Smart Things можно управлять всеми смарт-устройствами дома.</p>
+          </div>
+        </div>
+      </section>
     </div>
-
   </main>
 
   <script src="js/vendor.js" defer></script>

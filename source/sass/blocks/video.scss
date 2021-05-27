@@ -1,26 +1,46 @@
 .video__title {
   @include title;
   @include mobile-padding;
+  max-width: 550px;
+  margin: 0 auto;
   padding-top: 20px;
   margin-bottom: 30px;
 
+  @media (min-width: $mobile-plus-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   @media (min-width: $tablet-width) {
     @include tablet-padding;
+    max-width: 950px;
     padding-top: 40px;
     margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 49px;
+    margin-left: 0;
+    margin-right: auto;
   }
 }
 
 .video__inner {
+  max-width: 550px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     @include tablet-padding;
+    padding-right: 28px;
     display: flex;
+    max-width: 950px;
   }
 
-
   @media (min-width: $desktop-width) {
-    // max-width: 1200px;
+    max-width: 1350px;
+    justify-content: space-between;
     margin-left: 0;
+    margin-right: auto;
   }
 }
 
@@ -57,9 +77,9 @@
   @include mobile-padding;
   margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    flex: 0 0 50%;
+  @media (min-width: $mobile-plus-width) {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,12 +90,10 @@
 }
 
 .video__item {
-  max-width: 550px;
-  margin: 0 auto;
   padding-top: 80px;
   position: relative;
   margin-bottom: 30px;
-  -webkit-margin-after: 31px;   // chrome
+  -webkit-margin-after: 31px;
 
   &::before {
     position: absolute;
@@ -90,21 +108,18 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-left: 136px;
+    padding-left: 142px;
     margin-bottom: 42px;
     -webkit-margin-after: 44px;
 
     &::before {
       top: calc(50% - 30px + 2px);
-      left: 36px;
+      left: 41px;
     }
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 141px;
-    max-width: 900px;
-    margin-left: 0;
-    margin-right: 0;
     -webkit-margin-after: 42px;
 
     &::before {
