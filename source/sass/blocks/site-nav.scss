@@ -7,14 +7,35 @@
 .site-nav__item {
   display: flex;
   justify-content: right;
-  margin-bottom: 15px;
+  padding: 7px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    cursor: pointer;
   }
 }
 
+.site-nav__item:hover,
+.site-nav__item:focus {
+  background-color: $decor-5;
+  color: $white;
+}
+
+.site-nav__item:hover a,
+.site-nav__item:focus a {
+  color: $white;
+}
+
+.site-nav__item:active {
+  opacity: 0.4;
+}
+
 .site-nav__link {
+  display: block;
+  width: 100%;
+  text-align: end;
+  text-align: right; // IE
   font-size: 14px;
   line-height: calc(21 / 14);
 

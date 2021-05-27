@@ -20,10 +20,13 @@
 <body>
   <header class="header">
     <div class="header__inner">
-      <a class="header__logo" aria-label="logo">
+      <a class="header__logo" href="index.html" aria-label="logo">
         <picture>
-          <source media="(min-width: 720px)" srcset="img/logo-tablet.png"/>
-          <img class="header__logo-img" src="img/logo-mobile.png" width="70" height="30" alt="Логотип">
+          <source type="image/webp" media="(min-width: 720px)" srcset="img/logo-tablet@1x.webp 1x, img/logo-tablet@2x.webp 2x" />
+          <source type="image/webp" srcset="img/logo-mobile@1x.webp 1x, img/logo-mobile@2x.webp 2x" />
+
+          <source media="(min-width: 720px)" srcset="img/logo-tablet@1x.png 1x, img/logo-tablet@1x.png 2x"/>
+          <img class="header__logo-img" src="img/logo-mobile@1x.png" srcset="img/logo-mobile@2x.png 2x" width="70" height="30" alt="Логотип">
         </picture>
       </a>
       <h1 class="header__title">Название курса в одну строку</h1>

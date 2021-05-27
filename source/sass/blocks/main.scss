@@ -1,3 +1,7 @@
+.main--opasity {
+  opacity: 0.2;
+}
+
 .main__inner {
   @include mobile-padding;
   flex: 1 0 auto;

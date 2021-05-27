@@ -37,6 +37,8 @@
   background-color: $white;
   transition: all 0.3s ease;
 
+
+
   &::before {
     position: absolute;
     content: "";
@@ -57,6 +59,11 @@
     width: 1px;
     background: $decor-1;
     transform: rotate(-45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 21px;
+    right: 26px;
   }
 
   &:hover::before,
